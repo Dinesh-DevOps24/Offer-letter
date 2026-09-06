@@ -1,0 +1,39 @@
+cd /home/Alex/Workshop/project1/python/Offer-letter
+
+cat > .gitignore <<'EOF'
+# Python
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment / secrets
+.env
+*.env
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# RSA keys - NEVER upload
+keys/
+backend/keys/
+
+# Generated files
+generated_letters/
+backend/generated/
+*.pdf
+*.png
+
+# Frontend
+node_modules/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+EOF
